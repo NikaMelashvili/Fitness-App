@@ -23,13 +23,12 @@ class RegisterActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-        btnRegister = findViewById(R.id.btnRegister)
-        etRegisterEmail = findViewById(R.id.etRegisterEmail)
-        etRegisterPassword = findViewById(R.id.etRegisterPassword)
+        btnRegister = findViewById<Button>(R.id.btnRegister)
+        etRegisterEmail = findViewById<EditText>(R.id.etRegisterEmail)
+        etRegisterPassword = findViewById<EditText>(R.id.etRegisterPassword)
 
         btnRegister.setOnClickListener { registerUser() }
     }
-
 
     private fun registerUser() {
         val email = etRegisterEmail.text.toString().trim()
