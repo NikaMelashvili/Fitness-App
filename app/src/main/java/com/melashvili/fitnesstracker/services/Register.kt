@@ -1,4 +1,4 @@
-package com.melashvili.fitnesstracker
+package com.melashvili.fitnesstracker.services
 
 import android.os.Bundle
 import android.widget.Button
@@ -6,6 +6,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.melashvili.fitnesstracker.R
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -42,7 +43,7 @@ class RegisterActivity : AppCompatActivity() {
         firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show()
-                finish() // Navigate back to LoginActivity
+                finish()
             } else {
                 Toast.makeText(this, "Registration failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
             }

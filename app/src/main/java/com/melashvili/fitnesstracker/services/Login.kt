@@ -1,4 +1,4 @@
-package com.melashvili.fitnesstracker
+package com.melashvili.fitnesstracker.services
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.melashvili.fitnesstracker.MainActivity
+import com.melashvili.fitnesstracker.R
 
 class LoginActivity : AppCompatActivity() {
 

@@ -1,0 +1,9 @@
+{
+  "workouts": {
+    "1": { "name": "Push-ups", "reps": 15, "sets": 3 },
+    "2": { "name": "Squats", "reps": 20, "sets": 4 },
+    "3": { "name": "Sit-ups", "reps": 20, "sets": 4},
+    "4": { "name": "Crunches", "reps": 20, "sets": 4},
+    "5": { "name": "Cardio", "reps": 40, "sets": 1}
+  }
+}
